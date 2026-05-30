@@ -4,7 +4,7 @@ import simplejson
 import os
 import base64
 
-class MySocket():
+class MyClient():
     def __init__(self, ip, port):
         self.my_connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.my_connection.connect((ip, port))
